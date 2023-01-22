@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Számológép</title>
+    <link rel="stylesheet" href="menustyle.css">
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="keplink.html">Keplink</a></li>
+        <li><a href="kepeslink_2.html">Keplink 2</a></li>
+        <li><a href="lista.html">Lista</a></li>
+        <li><a href="tablazat.html">Tablazat</a></li>
+        <li><a href="urlap.html">Urlap</a></li>
+        <li><a  href="evszakok.html">Evzakok</a> </li>
+        <li><a  href="footer.html">Footer</a></li>
+        <li><a class="active" href="szamologep.html">szamologep</a></li>
+    </ul>
+
+
+
+<form name="szg">
+<input name="egy">
+<input name="ketto"><br>
+Eredmény: <input name="eredmeny"><br>
+<input type="button" value=" + " onClick="osszead()">
+<input type="button" value=" - " onClick="kivon()">
+<input type="button" value=" * " onClick="szoroz()">
+<input type="button" value=" / " onClick="oszt()"><br>
+
+
+</form>
+<script>
+function osszead() {
+document.szg.eredmeny.value = document.szg.egy.value *1 + document.szg.ketto.value * 1;
+}
+function kivon() {
+document.szg.eredmeny.value = document.szg.egy.value - document.szg.ketto.value;
+}
+function szoroz() {
+document.szg.eredmeny.value = document.szg.egy.value * document.szg.ketto.value;
+}
+function oszt() {
+document.szg.eredmeny.value = document.szg.egy.value / document.szg.ketto.value;
+}
+</script>
+
+
+</body>
+</html>
