@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pitagorasz</title>
+
+    <style>
+        .largename {
+            font-family: 'Righteous', cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="largename">pitagorasz</h1>
+    <img src="img/8TK_03_11abra.png" alt="">
+    <form onsubmit="szamol()">
+        <input type="text" id="a" oninput="szamol()">
+        <input type="text" id="b" oninput="szamol()">
+        <input type="text" id="c" oninput="szamol()">
+    </form>
+    <script>
+        function szamol() {
+            let a = document.getElementById("a")
+            let b = document.getElementById("b")
+            let c = document.getElementById("c")
+            if (a.value != 0 && b.value != 0) {
+                c.value = Math.sqrt((a.value * a.value) + (b.value * b.value));
+                console.log(c.value);
+            }
+            else if
+                (a.value != 0 && c.value != 0) {
+                b.value = Math.sqrt((a.value * a.value) + (c.value * c.value));
+            }
+            else if
+                (b.value != 0 && c.value != 0) {
+                a.value = Math.sqrt((c.value * c.value) + (b.value * b.value));
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
